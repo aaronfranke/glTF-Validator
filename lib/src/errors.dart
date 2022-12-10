@@ -533,6 +533,13 @@ class SemanticError extends IssueType {
               'minimum is equal to the thickness maximum.',
           Severity.Information);
 
+  static final SemanticError omiSpawnPointInvalidNode =
+      SemanticError._(
+          'OMI_SPAWN_POINT_INVALID_NODE',
+          (args) => 'A spawn point must be on its own node, it cannot be '
+              'on a node with other components such as a mesh or camera.',
+          Severity.Error);
+
   SemanticError._(String type, ErrorFunction message,
       [Severity severity = Severity.Error])
       : super(type, message, severity);
