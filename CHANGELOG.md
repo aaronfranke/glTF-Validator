@@ -1,5 +1,8 @@
 # Changelog
 
+* Added `NODE_SKINNED_MESH_PARENT_TRANSFORMS` warning which replaces some instances of `NODE_SKINNED_MESH_NON_ROOT`.
+* Reduce `NODE_SKINNED_MESH_NON_ROOT` severity to avoid unnecessary warnings for valid models.
+
 ## 2.0.0-dev.3.10
 
 ### New Features
